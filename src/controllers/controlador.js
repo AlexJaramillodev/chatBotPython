@@ -1,11 +1,14 @@
-function cambiarCaja(){
-    let boton = document.getElementById("botonChat")
-    let cajachat = document.getElementById("cajaChat")
+let boton=document.getElementById("botonChat")
+boton.addEventListener('click', function(){
     
-    if(cajachat.style.display == 'none' || cajachat.style.display == ''){
-        cajachat.style.display ="block"
-
+    let cajaChat=document.getElementById("cajaChat")
+    if(cajaChat.style.display=="none" || cajaChat.style.display==""){
+        cajaChat.style.display="block"
     }else{
-        cajachat.style.display ="none"
+        cajaChat.style.display="none"
     }
-}
+ 
+})
+
+
+
